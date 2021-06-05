@@ -14,13 +14,13 @@ export const ToDoListComponent: React.FC<Props> = props => {
     return (
         <div style={{display: "flex"}}>
             <div style={{width: "50vw"}}>
-                <p>List of pending tasks</p>
+                <h2>List of pending tasks</h2>
                 <ul style={{listStyle:"none"}}>
                     {listOfPendingTasks.map( task => <li key={task.id}>{ task.description }</li>)}
                 </ul>  
             </div>
             <div style={{width: "50vw"}}>
-                <p>List of completed tasks</p>
+                <h2>List of completed tasks</h2>
                 <ul style={{listStyle:"none"}}>
                     {listOfCompletedTasks.map( task => <li key={task.id}>{ task.description }</li>)}    
                 </ul>

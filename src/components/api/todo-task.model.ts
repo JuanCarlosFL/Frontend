@@ -3,3 +3,9 @@ export interface TodoTask {
     description: string;
     isCompleted: boolean;
 }
+
+export const createNewTask = {
+    id: 0,
+    description: '',
+    isCompleted: false
+}
