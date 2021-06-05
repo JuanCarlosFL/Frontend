@@ -37,7 +37,7 @@ export const ToDoComponent = () => {
                 description: e.target.value
             })}/>
             <button onClick={handleAddTask}>Add task</button>
-            <ToDoListComponent todotask={todoList} handleChangeStatusTask={handleChangeStatusTask}/>
+            <ToDoListComponent todotasks={todoList} handleChangeStatusTask={handleChangeStatusTask}/>
         </>
     )
 }
